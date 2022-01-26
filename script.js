@@ -34,7 +34,8 @@ function addbtn() {
         devbtn.href = devurl;
 
         // meant to insert after the branch menu
-        anchor.insertBefore(devbtn, anchor.firstChild.nextSibling.nextSibling);
+        if(anchor.firstChild.nextSibling.classList.contains('position-relative'))
+            anchor.insertBefore(devbtn, anchor.firstChild.nextSibling.nextSibling);
     }
 }
 
