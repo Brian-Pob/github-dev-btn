@@ -36,7 +36,7 @@ function addbtn() {
     /* Get url */
     let devurl = window.location.href;
     /* find first occurance of 'com' and replace with 'dev' */
-    devurl = devurl.replace(/com/g, 'dev');
+    devurl = devurl.replace(/.com/, '.dev');
     devbtn.href = devurl;
 
     /* meant to insert after the branch menu */
